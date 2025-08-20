@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Header from "./Header";
 import Searchbar from "./Searchbar";
-import Filter from "./filter";
+import Filter from "./Filter";
 import Countrycard from "./Countrycard";
 import ShimmerCol from "./ShimmerCol";
 import { ThemeContext } from "../contexts/ThemeContext";
