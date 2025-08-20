@@ -1,0 +1,54 @@
+@import url("https://api.fontshare.com/v2/css?f[]=general-sans@200,400,600&f[]=clash-display@500,600&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=manrope@300&display=swap");
+
+@import "tailwindcss";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-clash-display: 'Clash Display', sans-serif;
+  --font-general-sans: 'General Sans', sans-serif;
+  --font-cabinet: 'Cabinet Grotesk', sans-serif;
+  --font-ranade: 'Ranade', sans-serif;
+  --font-clash-grotesk: 'Clash Grotesk', sans-serif;
+  --font-stardom: 'Stardom', sans-serif;
+  --font-supreme: 'Supreme', sans-serif;
+  --font-boska: 'Boska', serif;
+  --font-telma: 'Telma', serif;
+  --font-tanker: 'Tanker', sans-serif;
+  --font-britney: 'Britney', cursive;
+  --font-melodrama: 'Melodrama', serif;
+  --font-zina: 'Zina', serif;
+  --font-new-title: 'New Title', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-bebas: 'Bebas Neue', cursive;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-excon: 'Excon', sans-serif;
+  --font-gambetta: 'Gambetta', serif;
+  --font-khand: 'Khand', sans-serif;
+  --font-switzer: 'Switzer', sans-serif;
+  --font-quilon: 'Quilon', sans-serif;
+  --font-rowan: 'Rowan', serif;
+  --font-erode: 'Erode', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+  --font-archivo: 'Archivo', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+}
+
+
+
+@layer components {
+.shd {
+  @apply shadow-sm border-2 border-neutral-300; 
+}
+.dark {
+  @apply bg-gray-950 text-white border-neutral-800
+}
+.light {
+  @apply bg-white text-black
+}
+}
