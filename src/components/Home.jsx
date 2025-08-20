@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Header from "./Header";
 import Searchbar from "./Searchbar";
 import Filter from "./filter";
 import Countrycard from "./Countrycard";
 import ShimmerCol from "./ShimmerCol";
-const Home = ({dark}) => {
+import { ThemeContext } from "../contexts/ThemeContext";
+const Home = () => {
+  const dark = useContext(ThemeContext);
   const [query, setQuery] = useState("");
   return (
     <div

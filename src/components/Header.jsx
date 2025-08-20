@@ -1,4 +1,8 @@
-const Header = ({dark, setDark}) => {
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
+
+const Header = ({setDark}) => {
+  const dark = useContext(ThemeContext);
   return (
     <nav
       className={`min-w-7xl h-20 py-5 fixed backdrop-blur-2xl flex justify-center sm:justify-evenly items-center px-4 sm:px-10 z-50 ${dark ? "bg-gradient-to-r from-black/70 via-gray-800/70 to-gray-900/70 text-white" : "bg-gradient-to-tr from-white/85 via-slate-50/85 to-gray-100/85 text-black"}  rounded-2xl gap-5`}
